@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\FM COMPUTERS\\LAB Project\\MoviesAPI\\MoviesAPI\\MoviesAPI.csproj": {}
+    "C:\\Users\\FM COMPUTERS\\Source\\Repos\\isakrexha1\\Movies-App\\MoviesAPI\\MoviesAPI\\MoviesAPI.csproj": {}
   },
   "projects": {
-    "C:\\Users\\FM COMPUTERS\\LAB Project\\MoviesAPI\\MoviesAPI\\MoviesAPI.csproj": {
+    "C:\\Users\\FM COMPUTERS\\Source\\Repos\\isakrexha1\\Movies-App\\MoviesAPI\\MoviesAPI\\MoviesAPI.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\FM COMPUTERS\\LAB Project\\MoviesAPI\\MoviesAPI\\MoviesAPI.csproj",
+        "projectUniqueName": "C:\\Users\\FM COMPUTERS\\Source\\Repos\\isakrexha1\\Movies-App\\MoviesAPI\\MoviesAPI\\MoviesAPI.csproj",
         "projectName": "MoviesAPI",
-        "projectPath": "C:\\Users\\FM COMPUTERS\\LAB Project\\MoviesAPI\\MoviesAPI\\MoviesAPI.csproj",
+        "projectPath": "C:\\Users\\FM COMPUTERS\\Source\\Repos\\isakrexha1\\Movies-App\\MoviesAPI\\MoviesAPI\\MoviesAPI.csproj",
         "packagesPath": "C:\\Users\\FM COMPUTERS\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\FM COMPUTERS\\LAB Project\\MoviesAPI\\MoviesAPI\\obj\\",
+        "outputPath": "C:\\Users\\FM COMPUTERS\\Source\\Repos\\isakrexha1\\Movies-App\\MoviesAPI\\MoviesAPI\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\FM COMPUTERS\\AppData\\Roaming\\NuGet\\NuGet.Config",
