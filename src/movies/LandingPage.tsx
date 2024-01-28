@@ -1,6 +1,8 @@
 import { useEffect, useState } from "react";
 import MoviesList from "./MoviesList";
 import { landingPageDTO } from "./movies.model";
+
+
 export default function LandingPage() {
   const [movies, setMovies] = useState<landingPageDTO>({});
 
@@ -29,8 +31,8 @@ export default function LandingPage() {
             title: "Family Plan",
             poster:
               "https://m.media-amazon.com/images/M/MV5BNGY3ZGNmZGMtNzBhNi00Y2U5LWI3ZTgtMjM4NDk3MjA1MDQ5XkEyXkFqcGdeQXVyNjE2MzI5ODM@._V1_.jpg",
-          },
-        ],
+          }
+        ]
       });
     }, 200);
 
