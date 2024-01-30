@@ -1,10 +1,18 @@
-export interface movieDTO{
-    id: number;
-    title: string;
-    poster: string;
+export interface movieDTO {
+  id: number;
+  title: string;
+  poster: string;
+}
+export interface movieCreationDTO {
+  title: string;
+  inTheaters: boolean;
+  trailer: string;
+  releaseData?: Date;
+  poster?: File;
+  posterURL?: string;
 }
 
-export interface landingPageDTO{
-    inTheaters?: movieDTO[];
-    upcomingReleases?: movieDTO[];
+export interface landingPageDTO {
+  inTheaters?: movieDTO[];
+  upcomingReleases?: movieDTO[];
 }
