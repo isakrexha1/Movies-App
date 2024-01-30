@@ -4,6 +4,8 @@ import Button from "../utils/Button";
 import { Link } from "react-router-dom";
 import { movieTheaterCreationDTO } from "./movieTheater.model";
 import * as Yup from "yup";
+import Map from "../utils/Map";
+
 export default function MovieTheaterForm(props: movieTheaterForm) {
   return (
     <Formik
@@ -15,10 +17,15 @@ export default function MovieTheaterForm(props: movieTheaterForm) {
           .firstLetterUppercase(),
       })}
     >
-      {(formikprops) => (
+      {(formikProps) => (
         <Form>
           <TextField displayName="Name" field="name" />
-          <Button disabled={formikprops.isSubmitting} type="submit">
+
+          <div style={{ marginBottom: "1rem" }}>
+            <Map />
+          </div>
+
+          <Button disabled={formikProps.isSubmitting} type="submit">
             Save changes
           </Button>
           <Link className="btn btn secondary" to="/movietheaters">

@@ -17,7 +17,7 @@ export default function FilterMovies() {
 
   return (
     <>
-      <h3>Filter Movies</h3>;
+      <h3>Filter Movies</h3>
       <Formik
         initialValues={initialValues}
         onSubmit={(values) => console.log(values)}
