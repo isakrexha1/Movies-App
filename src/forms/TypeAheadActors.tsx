@@ -1,6 +1,7 @@
 import { ReactElement, useState } from "react";
 import { Typeahead } from "react-bootstrap-typeahead";
 import { actorMovieDTO } from "../actors/actors.model";
+import { act } from "react-dom/test-utils";
 
 export default function TypeAheadActors(props: typeAheadActorsProps) {
   const actors: actorMovieDTO[] = [
@@ -26,7 +27,34 @@ export default function TypeAheadActors(props: typeAheadActorsProps) {
         "https://upload.wikimedia.org/wikipedia/commons/thumb/4/46/Meryl_Streep_December_2018.jpg/220px-Meryl_Streep_December_2018.jpg",
     },
   ];
- const selected:actorMovieDTO[]=[]
+ const selected:actorMovieDTO[]=[];
+
+ const [draggedElement, setDraggedElement] = 
+ useState<actorMovieDTO | undefined>(undefined);
+
+  function handleDragStart(actor: actorMovieDTO){
+    setDraggedElement(actor);
+  }
+
+  function handleDragOver(actor: actorMovieDTO){
+    if(!draggedElement){
+        return;
+    }
+    if(actor.id == draggedElement.id){
+        const draggedElementIndexed =
+        props.actors.findIndex (x=> x.id === draggedElement.id);
+
+        const actorIndex =
+        props.actors.findIndex (x=> x.id === actor.id);
+    
+        const actors = [...props.actors];
+        actors[actorIndex] = draggedElement;
+        actors[draggedElementIndexed] =actor;
+        props.onAdd(actors);
+
+    }
+  }
+
   return (
     <div className="mb-3">
       <label>{props.displayName}</label>
@@ -65,8 +93,15 @@ export default function TypeAheadActors(props: typeAheadActorsProps) {
       <ul className="list-group">
         {props.actors.map(actor => 
           <li key={actor.id}
+
+          draggable={true}
+          onDragStart={() => handleDragStart(actor)}
+          onDragOver={() => handleDragOver(actor)}
+
           className="list=group-item list-group-item-action"
-          >{props.listUI(actor)}
+          >
+        
+          {props.listUI(actor)}
           <span className="badge badge-primary badge-pill pointer text-dark"
           style={{marginLeft:'0.5rem'}}
           onClick={()=>props.onRemove(actor)}

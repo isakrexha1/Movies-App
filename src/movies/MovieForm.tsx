@@ -44,8 +44,10 @@ export default function MovieForm(props: movieFormProps) {
     <Formik
       initialValues={props.model}
       onSubmit={(values, actions) => {
-        values.genresIds = selectedGenres.map((item) => item.key);
-        values.movieTheatersIds = selectedMovieTheaters.map((item) => item.key);
+        values.genresIds = selectedGenres.map(item => item.key);
+        values.movieTheatersIds = selectedMovieTheaters.map(item => item.key);
+        values.actors = selectedActors;
+        props.onSubmit(values, actions);
       }}
       validationSchema={Yup.object({
         title: Yup.string()
