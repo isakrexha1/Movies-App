@@ -6,8 +6,8 @@ namespace MoviesAPI.Services
     {
 
         private List<Genre> _genres;
-
-        public InMemoryRepository()
+        
+        public InMemoryRepository(ILogger<InMemoryRepository> logger)
         {
             _genres = new List<Genre>()
             {
@@ -16,13 +16,19 @@ namespace MoviesAPI.Services
             };
         }
 
-        public List<Genre> GetAllGenres()
+        public async Task< List<Genre>> GetAllGenres()
         {
+            await Task.Delay(3000);
             return _genres;
         }
-        public Genre GetGenreById(int Id) 
-        { 
+        public Genre GetGenreById(int Id)
+        {
             return _genres.FirstOrDefault(x => x.Id == Id);
         }
+        public void AddGenre(Genre genre)
+            {
+            genre.Id = _genres.Max(x => x.Id) + 1;
+                _genres.Add(genre);
+            }
     }
 }
