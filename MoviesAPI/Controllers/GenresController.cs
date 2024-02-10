@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.ModelBinding;
+using Microsoft.Extensions.Logging;
 using MoviesAPI.Entities;
 using MoviesAPI.Services;
 
@@ -7,12 +8,13 @@ namespace MoviesAPI.Controllers
 {
     [Route("api/genres")]
     [ApiController]
-    public class GenresController: ControllerBase
+    public class GenresController : ControllerBase
     {
 
         private readonly IRepository repository;
+        private readonly ILogger<GenresController> logger;
 
-        public GenresController(IRepository repository)
+        public GenresController(IRepository repository, ILogger<GenresController> logger)
         {
             this.repository = repository;
         }
@@ -21,33 +23,37 @@ namespace MoviesAPI.Controllers
         [HttpGet("/allgenres")]//allgenres
         public async Task<ActionResult<List<Genre>>> Get()
         {
+            logger.LogInformation("Getting all the genres");
             return await repository.GetAllGenres();
         }
 
         [HttpGet("{Id:int}")]//api/genres/example
-        public ActionResult<Genre> Get(int Id,string param2)
+        public ActionResult<Genre> Get(int Id, string param2)
         {
-           
+            logger.LogDebug("get by Id method executing...");
 
-            var genre= repository.GetGenreById(Id);
+
+            var genre = repository.GetGenreById(Id);
             if (genre == null)
             {
+                logger.LogWarning($"Genre with id {Id} not found");
+                logger.LogError("this is an error");
                 return NotFound();
             }
             //return Ok(2)
-           // return 'felipe'
+            // return 'felipe'
             return genre;
         }
         [HttpPost]
-        public ActionResult Post([FromBody]Genre genre)
+        public ActionResult Post([FromBody] Genre genre)
         {
             repository.AddGenre(genre);
             return NoContent();
         }
         [HttpPut]
-        public ActionResult  Put([FromBody] Genre genre)
+        public ActionResult Put([FromBody] Genre genre)
         {
-          
+
             return NoContent();
         }
         [HttpDelete]

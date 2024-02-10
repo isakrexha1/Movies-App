@@ -6,7 +6,8 @@ namespace MoviesAPI.Services
     {
 
         private List<Genre> _genres;
-        
+        private readonly ILogger<InMemoryRepository> logger;
+
         public InMemoryRepository(ILogger<InMemoryRepository> logger)
         {
             _genres = new List<Genre>()
@@ -16,8 +17,9 @@ namespace MoviesAPI.Services
             };
         }
 
-        public async Task< List<Genre>> GetAllGenres()
+        public async Task<List<Genre>> GetAllGenres()
         {
+            logger.LogInformation("Executing GetAllGenres");
             await Task.Delay(3000);
             return _genres;
         }
@@ -26,9 +28,9 @@ namespace MoviesAPI.Services
             return _genres.FirstOrDefault(x => x.Id == Id);
         }
         public void AddGenre(Genre genre)
-            {
+        {
             genre.Id = _genres.Max(x => x.Id) + 1;
-                _genres.Add(genre);
-            }
+            _genres.Add(genre);
+        }
     }
 }
