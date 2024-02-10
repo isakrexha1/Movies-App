@@ -1,5 +1,6 @@
 ﻿using Microsoft.OpenApi.Models;
 using MoviesAPI.Services;
+using Microsoft.AspNetCore.Http;
 
 namespace MoviesAPI
 {
@@ -28,6 +29,16 @@ namespace MoviesAPI
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
         {
+
+            app.Map("/map1", (app) =>
+            {
+                app.Run(async context =>
+           {
+               await context.Response.WriteAsync("Im short-circuiting the pipeline");
+           });
+            });
+
+
             if (env.IsDevelopment())
             {
                 app.UseDeveloperExceptionPage();
