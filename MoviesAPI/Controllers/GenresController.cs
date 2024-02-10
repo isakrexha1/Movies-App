@@ -1,6 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc;
-using Microsoft.AspNetCore.Mvc.ModelBinding;
-using Microsoft.Extensions.Logging;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
 using MoviesAPI.Entities;
 using MoviesAPI.Services;
 
@@ -21,6 +20,8 @@ namespace MoviesAPI.Controllers
         [HttpGet]//api/genres
         [HttpGet("list")]//api/genres/list
         [HttpGet("/allgenres")]//allgenres
+        [Authorize(AuthenticationSchemes = JwtBearerDefaults.AuthenticationScheme)]
+        [ResponseCache(Duration = 60)]
         public async Task<ActionResult<List<Genre>>> Get()
         {
             logger.LogInformation("Getting all the genres");

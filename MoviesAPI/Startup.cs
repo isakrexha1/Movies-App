@@ -2,6 +2,7 @@
 using MoviesAPI.Services;
 using Microsoft.AspNetCore.Http;
 using System.IO;
+using Microsoft.AspNetCore.Authentication;
 
 namespace MoviesAPI
 {
@@ -15,16 +16,24 @@ namespace MoviesAPI
         public IConfiguration Configuration { get; }
 
         // This method gets called by the runtime. Use this method to add services to the container.
-        public void ConfigureServices(IServiceCollection services)
+        public object ConfigureServices(IServiceCollection services)
         {
 
             services.AddControllers();
+            services.AddResponseCaching();
+            services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme).AddJwtBearer();
+
             services.AddSingleton<IRepository, InMemoryRepository>();
 
             services.AddSwaggerGen(c =>
             {
                 c.SwaggerDoc("v1", new OpenApiInfo { Title = "MoviesAPI", Version = "v1" });
             });
+        }
+
+        private void JwtBearerDefaults(AuthenticationOptions options)
+        {
+            throw new NotImplementedException();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -72,6 +81,9 @@ namespace MoviesAPI
             app.UseHttpsRedirection();
 
             app.UseRouting();
+
+            app.UseResponseCaching();
+            app.UseAuthentication();
 
             app.UseAuthorization();
 
