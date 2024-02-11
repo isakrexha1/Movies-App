@@ -841,19 +841,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\FM COMPUTERS\\.nuget\\packages\\": {}
+    "C:\\Users\\laure\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\FM COMPUTERS\\OneDrive\\Desktop\\Movies-App\\MoviesAPI\\MoviesAPI.csproj",
+      "projectUniqueName": "C:\\Users\\laure\\OneDrive\\Desktop\\Movies-App\\MoviesAPI\\MoviesAPI.csproj",
       "projectName": "MoviesAPI",
-      "projectPath": "C:\\Users\\FM COMPUTERS\\OneDrive\\Desktop\\Movies-App\\MoviesAPI\\MoviesAPI.csproj",
-      "packagesPath": "C:\\Users\\FM COMPUTERS\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\FM COMPUTERS\\OneDrive\\Desktop\\Movies-App\\MoviesAPI\\obj\\",
+      "projectPath": "C:\\Users\\laure\\OneDrive\\Desktop\\Movies-App\\MoviesAPI\\MoviesAPI.csproj",
+      "packagesPath": "C:\\Users\\laure\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\laure\\OneDrive\\Desktop\\Movies-App\\MoviesAPI\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\FM COMPUTERS\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\laure\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -907,7 +907,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.401\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.403\\RuntimeIdentifierGraph.json"
       }
     }
   }
