@@ -1,12 +1,14 @@
 ﻿using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using MoviesAPI.Entities;
+using MoviesAPI.Filters;
 using MoviesAPI.Services;
 
 namespace MoviesAPI.Controllers
 {
     [Route("api/genres")]
     [ApiController]
+
     public class GenresController : ControllerBase
     {
 
@@ -22,6 +24,7 @@ namespace MoviesAPI.Controllers
         [HttpGet("list")]//api/genres/list
         [HttpGet("/allgenres")]//allgenres
         //[ResponseCache(Duration = 60)]
+        [ServiceFilter(typeof(MyActionFilter))]
         public async Task<ActionResult<List<Genre>>> Get()
         {
             logger.LogInformation("Getting all the genres");
@@ -41,6 +44,7 @@ namespace MoviesAPI.Controllers
             {
                 logger.LogWarning($"Genre with id {Id} not found");
                 logger.LogError("this is an error");
+                //throw new ApplicationException();
                 return NotFound();
             }
            
