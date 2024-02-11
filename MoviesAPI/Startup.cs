@@ -3,6 +3,7 @@ using MoviesAPI.Services;
 using Microsoft.AspNetCore.Http;
 using System.IO;
 using Microsoft.AspNetCore.Authentication;
+using Microsoft.AspNetCore.Authentication.JwtBearer;
 
 namespace MoviesAPI
 {
@@ -16,14 +17,16 @@ namespace MoviesAPI
         public IConfiguration Configuration { get; }
 
         // This method gets called by the runtime. Use this method to add services to the container.
-        public object ConfigureServices(IServiceCollection services)
+        public void ConfigureServices(IServiceCollection services)
         {
 
             services.AddControllers();
             services.AddResponseCaching();
-            services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme).AddJwtBearer();
 
             services.AddSingleton<IRepository, InMemoryRepository>();
+
+            services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme).AddJwtBearer();
+
 
             services.AddSwaggerGen(c =>
             {
@@ -31,10 +34,6 @@ namespace MoviesAPI
             });
         }
 
-        private void JwtBearerDefaults(AuthenticationOptions options)
-        {
-            throw new NotImplementedException();
-        }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env, ILogger<Startup> logger)
@@ -83,6 +82,7 @@ namespace MoviesAPI
             app.UseRouting();
 
             app.UseResponseCaching();
+
             app.UseAuthentication();
 
             app.UseAuthorization();
