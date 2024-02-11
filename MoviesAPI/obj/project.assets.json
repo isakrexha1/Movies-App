@@ -841,19 +841,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\laure\\.nuget\\packages\\": {}
+    "C:\\Users\\Kaltrina\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\laure\\OneDrive\\Desktop\\Movies-App\\MoviesAPI\\MoviesAPI.csproj",
+      "projectUniqueName": "C:\\Users\\Kaltrina\\Documents\\GitHub\\Movies-App\\MoviesAPI\\MoviesAPI.csproj",
       "projectName": "MoviesAPI",
-      "projectPath": "C:\\Users\\laure\\OneDrive\\Desktop\\Movies-App\\MoviesAPI\\MoviesAPI.csproj",
-      "packagesPath": "C:\\Users\\laure\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\laure\\OneDrive\\Desktop\\Movies-App\\MoviesAPI\\obj\\",
+      "projectPath": "C:\\Users\\Kaltrina\\Documents\\GitHub\\Movies-App\\MoviesAPI\\MoviesAPI.csproj",
+      "packagesPath": "C:\\Users\\Kaltrina\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Kaltrina\\Documents\\GitHub\\Movies-App\\MoviesAPI\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\laure\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Kaltrina\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -899,6 +899,24 @@
         ],
         "assetTargetFallback": true,
         "warn": true,
+        "downloadDependencies": [
+          {
+            "name": "Microsoft.AspNetCore.App.Ref",
+            "version": "[6.0.13, 6.0.13]"
+          },
+          {
+            "name": "Microsoft.NETCore.App.Host.win-x64",
+            "version": "[6.0.13, 6.0.13]"
+          },
+          {
+            "name": "Microsoft.NETCore.App.Ref",
+            "version": "[6.0.13, 6.0.13]"
+          },
+          {
+            "name": "Microsoft.WindowsDesktop.App.Ref",
+            "version": "[6.0.13, 6.0.13]"
+          }
+        ],
         "frameworkReferences": {
           "Microsoft.AspNetCore.App": {
             "privateAssets": "none"
@@ -907,7 +925,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.403\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.102\\RuntimeIdentifierGraph.json"
       }
     }
   }
