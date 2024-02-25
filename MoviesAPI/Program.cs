@@ -1,6 +1,5 @@
 using Microsoft.Extensions.Logging;
 using MoviesAPI.Controllers;
-using MoviesAPI.Services;
 
 namespace MoviesAPI
 {
@@ -8,11 +7,6 @@ namespace MoviesAPI
     {
         public static void Main(string[] args)
         {
-            var weatherForecastController = new WeatherForecastController();
-            weatherForecastController.Get();
-
-            //var genresControlle = new GenresController(new InMemoryRepository(new Logger()));
-
 
             CreateHostBuilder(args).Build().Run();
         }

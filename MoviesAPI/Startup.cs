@@ -1,5 +1,4 @@
 ﻿using Microsoft.OpenApi.Models;
-using MoviesAPI.Services;
 using Microsoft.AspNetCore.Http;
 using System.IO;
 using Microsoft.AspNetCore.Authentication;
@@ -31,10 +30,7 @@ namespace MoviesAPI
             {
                 options.Filters.Add(typeof(MyExceptionFilter));
             });
-            services.AddResponseCaching();
-            services.AddSingleton<IRepository, InMemoryRepository>();
             services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme).AddJwtBearer();
-            services.AddTransient<MyActionFilter>();
 
 
             services.AddSwaggerGen(c =>
@@ -48,37 +44,6 @@ namespace MoviesAPI
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env, ILogger<Startup> logger)
         {
 
-            app.Use(async (context, next) =>
-            {
-                using (var swapStream = new MemoryStream())
-                {
-                    var originalResponseBody = context.Response.Body;
-                    context.Response.Body = swapStream;
-
-                    await next.Invoke();
-
-                    swapStream.Seek(0, SeekOrigin.Begin);
-                    string responseBody = new StreamReader(swapStream).ReadToEnd();
-                    swapStream.Seek(0, SeekOrigin.Begin);
-
-                    await swapStream.CopyToAsync(originalResponseBody);
-                    context.Response.Body = originalResponseBody;
-
-                    logger.LogInformation(responseBody);
-
-
-                }
-            });
-
-            app.Map("/map1", (app) =>
-            {
-                app.Run(async context =>
-           {
-               await context.Response.WriteAsync("Im short-circuiting the pipeline");
-           });
-            });
-
-
             if (env.IsDevelopment())
             {
                 app.UseDeveloperExceptionPage();
@@ -89,8 +54,6 @@ namespace MoviesAPI
             app.UseHttpsRedirection();
 
             app.UseRouting();
-
-            app.UseResponseCaching();
 
             app.UseAuthentication();
 
