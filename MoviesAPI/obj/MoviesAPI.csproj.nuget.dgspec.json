@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\FM COMPUTERS\\OneDrive\\Desktop\\Movies-App\\MoviesAPI\\MoviesAPI.csproj": {}
+    "c:\\Users\\Kaltrina\\Documents\\GitHub\\Movies-App\\MoviesAPI\\MoviesAPI.csproj": {}
   },
   "projects": {
-    "C:\\Users\\FM COMPUTERS\\OneDrive\\Desktop\\Movies-App\\MoviesAPI\\MoviesAPI.csproj": {
+    "c:\\Users\\Kaltrina\\Documents\\GitHub\\Movies-App\\MoviesAPI\\MoviesAPI.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\FM COMPUTERS\\OneDrive\\Desktop\\Movies-App\\MoviesAPI\\MoviesAPI.csproj",
+        "projectUniqueName": "c:\\Users\\Kaltrina\\Documents\\GitHub\\Movies-App\\MoviesAPI\\MoviesAPI.csproj",
         "projectName": "MoviesAPI",
-        "projectPath": "C:\\Users\\FM COMPUTERS\\OneDrive\\Desktop\\Movies-App\\MoviesAPI\\MoviesAPI.csproj",
-        "packagesPath": "C:\\Users\\FM COMPUTERS\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\FM COMPUTERS\\OneDrive\\Desktop\\Movies-App\\MoviesAPI\\obj\\",
+        "projectPath": "c:\\Users\\Kaltrina\\Documents\\GitHub\\Movies-App\\MoviesAPI\\MoviesAPI.csproj",
+        "packagesPath": "C:\\Users\\Kaltrina\\.nuget\\packages\\",
+        "outputPath": "c:\\Users\\Kaltrina\\Documents\\GitHub\\Movies-App\\MoviesAPI\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\FM COMPUTERS\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Kaltrina\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -40,9 +40,23 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "dependencies": {
+            "AutoMapper.Extensions.Microsoft.DependencyInjection": {
+              "target": "Package",
+              "version": "[8.1.0, )"
+            },
             "Microsoft.AspNetCore.Authentication.JwtBearer": {
               "target": "Package",
               "version": "[6.0.1, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[6.0.0, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[6.0.0, )"
             },
             "Swashbuckle.AspNetCore": {
               "target": "Package",
@@ -60,6 +74,24 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[6.0.13, 6.0.13]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Host.win-x64",
+              "version": "[6.0.13, 6.0.13]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Ref",
+              "version": "[6.0.13, 6.0.13]"
+            },
+            {
+              "name": "Microsoft.WindowsDesktop.App.Ref",
+              "version": "[6.0.13, 6.0.13]"
+            }
+          ],
           "frameworkReferences": {
             "Microsoft.AspNetCore.App": {
               "privateAssets": "none"
@@ -68,7 +100,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.401\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.102\\RuntimeIdentifierGraph.json"
         }
       }
     }

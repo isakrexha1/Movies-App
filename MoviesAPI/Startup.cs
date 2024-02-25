@@ -8,7 +8,8 @@ using MoviesAPI.Filters;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
-
+using Microsoft.EntityFrameworkCore;
+using AutoMapper;
 
 namespace MoviesAPI
 {
@@ -25,6 +26,9 @@ namespace MoviesAPI
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+            services.AddDbContext<ApplicationDbContext>(options =>
+            options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection")));
+ 
 
             services.AddControllers(options =>
             {
@@ -38,6 +42,7 @@ namespace MoviesAPI
                 c.SwaggerDoc("v1", new OpenApiInfo { Title = "MoviesAPI", Version = "v1" });
             });
 
+            services.AddAutoMapper(typeof(Startup));
 
             services.AddCors(options =>
             {
