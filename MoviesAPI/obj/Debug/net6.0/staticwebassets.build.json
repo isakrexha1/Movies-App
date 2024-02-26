@@ -1,11 +1,19 @@
 {
   "Version": 1,
-  "Hash": "RGOnVuaUuhzxy+DBbGSsQRVU71P5/wPQJlSJhlhFJ8A=",
+  "Hash": "JxCoB3cutRzPDYYtglugvA+6ZxIBMmcmJIEmL5P1kXU=",
   "Source": "MoviesAPI",
   "BasePath": "_content/MoviesAPI",
   "Mode": "Default",
   "ManifestType": "Build",
   "ReferencedProjectsConfiguration": [],
-  "DiscoveryPatterns": [],
+  "DiscoveryPatterns": [
+    {
+      "Name": "MoviesAPI\\wwwroot",
+      "Source": "MoviesAPI",
+      "ContentRoot": "C:\\Users\\Kaltrina\\Documents\\GitHub\\Movies-App\\MoviesAPI\\wwwroot\\",
+      "BasePath": "_content/MoviesAPI",
+      "Pattern": "**"
+    }
+  ],
   "Assets": []
 }
