@@ -34,12 +34,13 @@ namespace MoviesAPI.Controllers
             return mapper.Map<ActorDTO>(actor);
         }
         [HttpPost]
-        public async Task<ActionResult> Post([FromBody]ActorCreationDTO actorCreationDTO)
+        public async Task<ActionResult> Post([FromForm]ActorCreationDTO actorCreationDTO)
         {
+            return NoContent();
             throw new NotImplementedException();
         }
         [HttpPut]
-        public async Task<ActionResult> Put([FromBody] ActorCreationDTO actorCreationDTO)
+        public async Task<ActionResult> Put([FromForm] ActorCreationDTO actorCreationDTO)
         {
             throw new NotImplementedException();
         }
