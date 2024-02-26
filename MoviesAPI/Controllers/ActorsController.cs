@@ -24,11 +24,14 @@ namespace MoviesAPI.Controllers
             this.fileStorageService = fileStorageService;
         }
         [HttpGet]
-        public async Task<ActionResult<List<ActorDTO>>>Get()
-         {
-            var actors = await context.Actors.ToListAsync();
+        public async Task<ActionResult<List<ActorDTO>>> Get([FromQuery] PaginationDTO paginationDTO)
+        {
+            var queryable = context.Actors.AsQueryable();
+            await HttpContext.InsertParametersPaginationInHeader(queryable);
+            var actors = await queryable.OrderBy(x => x.Name).Paginate(paginationDTO).ToListAsync();
             return mapper.Map<List<ActorDTO>>(actors);
         }
+
         [HttpGet("{id:int}")]
         public async Task<ActionResult<ActorDTO>> Get(int id)
         {
@@ -51,11 +54,29 @@ namespace MoviesAPI.Controllers
             await context.SaveChangesAsync();
             return NoContent();
         }
-        [HttpPut]
-        public async Task<ActionResult> Put([FromForm] ActorCreationDTO actorCreationDTO)
+        [HttpPut("{id:int}")]
+        public async Task<ActionResult> Put(int id, [FromForm] ActorCreationDTO actorCreationDTO)
         {
-            throw new NotImplementedException();
+            var actor = await context.Actors.FirstOrDefaultAsync(x => x.Id == id);
+
+            if (actor == null)
+            {
+                return NotFound();
+            }
+
+            actor = mapper.Map(actorCreationDTO, actor);
+
+            if (actorCreationDTO.Picture != null)
+            {
+                actor.Picture = await fileStorageService.EditFile(containerName,
+                        actorCreationDTO.Picture, actor.Picture);
+            }
+
+            await context.SaveChangesAsync();
+            return NoContent();
         }
+
+
         [HttpDelete("{id:int}")]
         public async Task<ActionResult>Delete(int id)
         {
@@ -66,7 +87,8 @@ namespace MoviesAPI.Controllers
             }
 
             context.Remove(actor);
-             await context.SaveChangesAsync();
+            await context.SaveChangesAsync();
+            await fileStorageService.DeleteFile(actor.Picture, containerName);
             return NoContent();
         }
     }
