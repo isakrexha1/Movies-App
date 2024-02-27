@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "uehjmkGDlsKYssbklM7QpIRXd0bWsuF5Dhubx2DkDMY=",
+  "Hash": "ISBQWmCoQdinOyGSL8W9ZYc2kNN+mbIjRhBaCmDroGs=",
   "Source": "MoviesAPI",
   "BasePath": "_content/MoviesAPI",
   "Mode": "Default",
@@ -10,17 +10,17 @@
     {
       "Name": "MoviesAPI\\wwwroot",
       "Source": "MoviesAPI",
-      "ContentRoot": "C:\\Users\\Kaltrina\\Documents\\GitHub\\Movies-App\\MoviesAPI\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\FM COMPUTERS\\OneDrive\\Desktop\\Movies-App\\MoviesAPI\\wwwroot\\",
       "BasePath": "_content/MoviesAPI",
       "Pattern": "**"
     }
   ],
   "Assets": [
     {
-      "Identity": "C:\\Users\\Kaltrina\\Documents\\GitHub\\Movies-App\\MoviesAPI\\wwwroot\\actors\\2e329fc5-1fdb-43bb-8b2d-81b8b39d5d26.png",
+      "Identity": "C:\\Users\\FM COMPUTERS\\OneDrive\\Desktop\\Movies-App\\MoviesAPI\\wwwroot\\actors\\2e329fc5-1fdb-43bb-8b2d-81b8b39d5d26.png",
       "SourceId": "MoviesAPI",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Kaltrina\\Documents\\GitHub\\Movies-App\\MoviesAPI\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\FM COMPUTERS\\OneDrive\\Desktop\\Movies-App\\MoviesAPI\\wwwroot\\",
       "BasePath": "_content/MoviesAPI",
       "RelativePath": "actors/2e329fc5-1fdb-43bb-8b2d-81b8b39d5d26.png",
       "AssetKind": "All",
@@ -34,10 +34,10 @@
       "OriginalItemSpec": "wwwroot\\actors\\2e329fc5-1fdb-43bb-8b2d-81b8b39d5d26.png"
     },
     {
-      "Identity": "C:\\Users\\Kaltrina\\Documents\\GitHub\\Movies-App\\MoviesAPI\\wwwroot\\actors\\3490cd4e-81c0-414f-9d7c-5f244eed0e4b.jpg",
+      "Identity": "C:\\Users\\FM COMPUTERS\\OneDrive\\Desktop\\Movies-App\\MoviesAPI\\wwwroot\\actors\\3490cd4e-81c0-414f-9d7c-5f244eed0e4b.jpg",
       "SourceId": "MoviesAPI",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Kaltrina\\Documents\\GitHub\\Movies-App\\MoviesAPI\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\FM COMPUTERS\\OneDrive\\Desktop\\Movies-App\\MoviesAPI\\wwwroot\\",
       "BasePath": "_content/MoviesAPI",
       "RelativePath": "actors/3490cd4e-81c0-414f-9d7c-5f244eed0e4b.jpg",
       "AssetKind": "All",
@@ -51,10 +51,10 @@
       "OriginalItemSpec": "wwwroot\\actors\\3490cd4e-81c0-414f-9d7c-5f244eed0e4b.jpg"
     },
     {
-      "Identity": "C:\\Users\\Kaltrina\\Documents\\GitHub\\Movies-App\\MoviesAPI\\wwwroot\\actors\\a5885b35-13db-4020-9845-1ea4232e4814.jpg",
+      "Identity": "C:\\Users\\FM COMPUTERS\\OneDrive\\Desktop\\Movies-App\\MoviesAPI\\wwwroot\\actors\\a5885b35-13db-4020-9845-1ea4232e4814.jpg",
       "SourceId": "MoviesAPI",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Kaltrina\\Documents\\GitHub\\Movies-App\\MoviesAPI\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\FM COMPUTERS\\OneDrive\\Desktop\\Movies-App\\MoviesAPI\\wwwroot\\",
       "BasePath": "_content/MoviesAPI",
       "RelativePath": "actors/a5885b35-13db-4020-9845-1ea4232e4814.jpg",
       "AssetKind": "All",
