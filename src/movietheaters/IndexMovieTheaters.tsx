@@ -23,7 +23,7 @@ export default function IndexMovieTheaters() {
               {entities?.map((entity) => (
                 <tr key={entity.id}>
                   <td>
-                    {buttons(`moviethaters/edit/${entity.id}`, entity.id)}
+                    {buttons(`movietheaters/edit/${entity.id}`, entity.id)}
                   </td>
                   <td>{entity.name}</td>
                 </tr>
