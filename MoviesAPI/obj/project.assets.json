@@ -228,6 +228,27 @@
           }
         }
       },
+      "Microsoft.EntityFrameworkCore.SqlServer.NetTopologySuite/6.0.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.EntityFrameworkCore.SqlServer": "6.0.0",
+          "NetTopologySuite": "2.3.0",
+          "NetTopologySuite.IO.SqlServerBytes": "2.0.0"
+        },
+        "compile": {
+          "lib/net6.0/Microsoft.EntityFrameworkCore.SqlServer.NetTopologySuite.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/Microsoft.EntityFrameworkCore.SqlServer.NetTopologySuite.dll": {
+            "related": ".xml"
+          }
+        },
+        "build": {
+          "build/net6.0/Microsoft.EntityFrameworkCore.SqlServer.NetTopologySuite.targets": {}
+        }
+      },
       "Microsoft.EntityFrameworkCore.Tools/6.0.0": {
         "type": "package",
         "dependencies": {
@@ -576,6 +597,38 @@
           }
         }
       },
+      "NetTopologySuite/2.3.0": {
+        "type": "package",
+        "dependencies": {
+          "System.Memory": "4.5.3"
+        },
+        "compile": {
+          "lib/netstandard2.0/NetTopologySuite.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard2.0/NetTopologySuite.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "NetTopologySuite.IO.SqlServerBytes/2.0.0": {
+        "type": "package",
+        "dependencies": {
+          "NetTopologySuite": "[2.0.0, 3.0.0-A)"
+        },
+        "compile": {
+          "lib/netstandard2.0/NetTopologySuite.IO.SqlServerBytes.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard2.0/NetTopologySuite.IO.SqlServerBytes.dll": {
+            "related": ".xml"
+          }
+        }
+      },
       "Swashbuckle.AspNetCore/6.5.0": {
         "type": "package",
         "dependencies": {
@@ -734,6 +787,15 @@
           "lib/netstandard2.0/System.IdentityModel.Tokens.Jwt.dll": {
             "related": ".xml"
           }
+        }
+      },
+      "System.Memory/4.5.3": {
+        "type": "package",
+        "compile": {
+          "ref/netcoreapp2.1/_._": {}
+        },
+        "runtime": {
+          "lib/netcoreapp2.1/_._": {}
         }
       },
       "System.Reflection.Emit/4.7.0": {
@@ -1228,6 +1290,21 @@
         "lib/net6.0/Microsoft.EntityFrameworkCore.SqlServer.xml",
         "microsoft.entityframeworkcore.sqlserver.6.0.0.nupkg.sha512",
         "microsoft.entityframeworkcore.sqlserver.nuspec"
+      ]
+    },
+    "Microsoft.EntityFrameworkCore.SqlServer.NetTopologySuite/6.0.0": {
+      "sha512": "LzZWdjd1KCKXyKAHZHhfC/xzicuAzMdI/9jt1Hdwp5QHjIlSpiMoRn3kK4hc89JDNbWklbnjE3Domxys8qzq0g==",
+      "type": "package",
+      "path": "microsoft.entityframeworkcore.sqlserver.nettopologysuite/6.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "build/net6.0/Microsoft.EntityFrameworkCore.SqlServer.NetTopologySuite.targets",
+        "lib/net6.0/Microsoft.EntityFrameworkCore.SqlServer.NetTopologySuite.dll",
+        "lib/net6.0/Microsoft.EntityFrameworkCore.SqlServer.NetTopologySuite.xml",
+        "microsoft.entityframeworkcore.sqlserver.nettopologysuite.6.0.0.nupkg.sha512",
+        "microsoft.entityframeworkcore.sqlserver.nettopologysuite.nuspec"
       ]
     },
     "Microsoft.EntityFrameworkCore.Tools/6.0.0": {
@@ -1964,6 +2041,33 @@
         "version.txt"
       ]
     },
+    "NetTopologySuite/2.3.0": {
+      "sha512": "Y+YOvA5um+75Wm9NKE+EhUNCvLYWiPhPW5Q5eBNi6kVNbxsX60/nvIJtve5iRcbrAl38W9h2w2yBjU81cjDO5g==",
+      "type": "package",
+      "path": "nettopologysuite/2.3.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "icon.png",
+        "lib/netstandard2.0/NetTopologySuite.dll",
+        "lib/netstandard2.0/NetTopologySuite.xml",
+        "nettopologysuite.2.3.0.nupkg.sha512",
+        "nettopologysuite.nuspec"
+      ]
+    },
+    "NetTopologySuite.IO.SqlServerBytes/2.0.0": {
+      "sha512": "TuyMB0VSlRJx86UrWeQ+SGgOMudvhIL1qJJdWJw78nWsXIzKRP4ooQAhhhCCH7n8q1lvd0/NW3ByaLlHxxNSPQ==",
+      "type": "package",
+      "path": "nettopologysuite.io.sqlserverbytes/2.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/netstandard2.0/NetTopologySuite.IO.SqlServerBytes.dll",
+        "lib/netstandard2.0/NetTopologySuite.IO.SqlServerBytes.xml",
+        "nettopologysuite.io.sqlserverbytes.2.0.0.nupkg.sha512",
+        "nettopologysuite.io.sqlserverbytes.nuspec"
+      ]
+    },
     "Swashbuckle.AspNetCore/6.5.0": {
       "sha512": "FK05XokgjgwlCI6wCT+D4/abtQkL1X1/B9Oas6uIwHFmYrIO9WUD5aLC9IzMs9GnHfUXOtXZ2S43gN1mhs5+aA==",
       "type": "package",
@@ -2181,6 +2285,27 @@
         "lib/netstandard2.0/System.IdentityModel.Tokens.Jwt.xml",
         "system.identitymodel.tokens.jwt.6.10.0.nupkg.sha512",
         "system.identitymodel.tokens.jwt.nuspec"
+      ]
+    },
+    "System.Memory/4.5.3": {
+      "sha512": "3oDzvc/zzetpTKWMShs1AADwZjQ/36HnsufHRPcOjyRAAMLDlu2iD33MBI2opxnezcVUtXyqDXXjoFMOU9c7SA==",
+      "type": "package",
+      "path": "system.memory/4.5.3",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.TXT",
+        "THIRD-PARTY-NOTICES.TXT",
+        "lib/netcoreapp2.1/_._",
+        "lib/netstandard1.1/System.Memory.dll",
+        "lib/netstandard1.1/System.Memory.xml",
+        "lib/netstandard2.0/System.Memory.dll",
+        "lib/netstandard2.0/System.Memory.xml",
+        "ref/netcoreapp2.1/_._",
+        "system.memory.4.5.3.nupkg.sha512",
+        "system.memory.nuspec",
+        "useSharedDesignerContext.txt",
+        "version.txt"
       ]
     },
     "System.Reflection.Emit/4.7.0": {
@@ -2600,24 +2725,25 @@
       "AutoMapper.Extensions.Microsoft.DependencyInjection >= 8.1.0",
       "Microsoft.AspNetCore.Authentication.JwtBearer >= 6.0.1",
       "Microsoft.EntityFrameworkCore.SqlServer >= 6.0.0",
+      "Microsoft.EntityFrameworkCore.SqlServer.NetTopologySuite >= 6.0.0",
       "Microsoft.EntityFrameworkCore.Tools >= 6.0.0",
       "Swashbuckle.AspNetCore >= 6.5.0"
     ]
   },
   "packageFolders": {
-    "C:\\Users\\FM COMPUTERS\\.nuget\\packages\\": {}
+    "C:\\Users\\Kaltrina\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\FM COMPUTERS\\OneDrive\\Desktop\\Movies-App\\MoviesAPI\\MoviesAPI.csproj",
+      "projectUniqueName": "C:\\Users\\Kaltrina\\Documents\\GitHub\\Movies-App\\MoviesAPI\\MoviesAPI.csproj",
       "projectName": "MoviesAPI",
-      "projectPath": "C:\\Users\\FM COMPUTERS\\OneDrive\\Desktop\\Movies-App\\MoviesAPI\\MoviesAPI.csproj",
-      "packagesPath": "C:\\Users\\FM COMPUTERS\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\FM COMPUTERS\\OneDrive\\Desktop\\Movies-App\\MoviesAPI\\obj\\",
+      "projectPath": "C:\\Users\\Kaltrina\\Documents\\GitHub\\Movies-App\\MoviesAPI\\MoviesAPI.csproj",
+      "packagesPath": "C:\\Users\\Kaltrina\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Kaltrina\\Documents\\GitHub\\Movies-App\\MoviesAPI\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\FM COMPUTERS\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Kaltrina\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -2655,6 +2781,10 @@
             "target": "Package",
             "version": "[6.0.0, )"
           },
+          "Microsoft.EntityFrameworkCore.SqlServer.NetTopologySuite": {
+            "target": "Package",
+            "version": "[6.0.0, )"
+          },
           "Microsoft.EntityFrameworkCore.Tools": {
             "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
             "suppressParent": "All",
@@ -2677,6 +2807,24 @@
         ],
         "assetTargetFallback": true,
         "warn": true,
+        "downloadDependencies": [
+          {
+            "name": "Microsoft.AspNetCore.App.Ref",
+            "version": "[6.0.13, 6.0.13]"
+          },
+          {
+            "name": "Microsoft.NETCore.App.Host.win-x64",
+            "version": "[6.0.13, 6.0.13]"
+          },
+          {
+            "name": "Microsoft.NETCore.App.Ref",
+            "version": "[6.0.13, 6.0.13]"
+          },
+          {
+            "name": "Microsoft.WindowsDesktop.App.Ref",
+            "version": "[6.0.13, 6.0.13]"
+          }
+        ],
         "frameworkReferences": {
           "Microsoft.AspNetCore.App": {
             "privateAssets": "none"
@@ -2685,7 +2833,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.401\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.102\\RuntimeIdentifierGraph.json"
       }
     }
   }

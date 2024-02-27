@@ -12,6 +12,8 @@ using Microsoft.EntityFrameworkCore;
 using AutoMapper;
 using MoviesAPI.APIBehavior;
 using MoviesAPI.Helpers;
+using NetTopologySuite.Geometries;
+using NetTopologySuite;
 
 namespace MoviesAPI
 {
@@ -29,7 +31,12 @@ namespace MoviesAPI
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddDbContext<ApplicationDbContext>(options =>
-            options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection")));
+            options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection"),
+            sqlOptions => sqlOptions.UseNetTopologySuite()));
+
+            
+
+
 
 
             services.AddControllers(options =>
@@ -47,6 +54,17 @@ namespace MoviesAPI
             });
 
             services.AddAutoMapper(typeof(Startup));
+
+            services.AddSingleton(provider => new MapperConfiguration(config =>
+            {
+                var geometryFactory = provider.GetRequiredService<GeometryFactory>();
+                config.AddProfile(new AutoMapperProfiles(geometryFactory));
+            }).CreateMapper());
+
+            services.AddSingleton<GeometryFactory>(NtsGeometryServices
+                .Instance.CreateGeometryFactory(srid: 4326));
+
+
             services.AddScoped<IFileStorageService, InAppStorageService>();
             services.AddHttpContextAccessor();
 

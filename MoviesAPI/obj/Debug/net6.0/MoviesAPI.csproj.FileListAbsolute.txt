@@ -207,3 +207,7 @@ C:\Users\FM COMPUTERS\OneDrive\Desktop\Movies-App\MoviesAPI\bin\Debug\net6.0\run
 C:\Users\FM COMPUTERS\OneDrive\Desktop\Movies-App\MoviesAPI\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.0\System.Windows.Extensions.dll
 C:\Users\Kaltrina\Documents\GitHub\Movies-App\MoviesAPI\bin\Debug\net6.0\MoviesAPI.staticwebassets.runtime.json
 C:\Users\FM COMPUTERS\OneDrive\Desktop\Movies-App\MoviesAPI\bin\Debug\net6.0\MoviesAPI.staticwebassets.runtime.json
+C:\Users\Kaltrina\Documents\GitHub\Movies-App\MoviesAPI\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.SqlServer.NetTopologySuite.dll
+C:\Users\Kaltrina\Documents\GitHub\Movies-App\MoviesAPI\bin\Debug\net6.0\NetTopologySuite.dll
+C:\Users\Kaltrina\Documents\GitHub\Movies-App\MoviesAPI\bin\Debug\net6.0\NetTopologySuite.IO.SqlServerBytes.dll
+C:\Users\Kaltrina\Documents\GitHub\Movies-App\MoviesAPI\obj\Debug\net6.0\EFCoreSqlServerNetTopologySuite.cs
