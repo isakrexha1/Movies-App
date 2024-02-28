@@ -1,28 +1,44 @@
+import { useEffect, useState } from "react";
 import { genreDTO } from "../genres/genres.model";
 import { movieTheaterDTO } from "../movietheaters/movieTheater.model";
 import MovieForm from "./MovieForm";
-import { movieCreationDTO } from "./movies.model";
+import axios, { AxiosResponse } from "axios";
+import { urlMovies } from "../endpoints";
+import { moviesPostGetDTO } from "./movies.model";
+import Loading from "../utils/Loading";
 
 export default function CreateMovie() {
 
-  const nonSelectedGenres: genreDTO[] = [{id: 1, name: 'Comedy'}, {id: 2, name: 'Drama'}]
- 
-  const nonSelectedMovieTheaters: movieTheaterDTO[] = 
-  [{id: 1, name: 'Cinneplex'}, {id: 2, name: 'CineStar'}]
+  const [nonSelectedGenres, setNonSelectedGenres] = useState<genreDTO[]>([]);
+  const [nonSelectedMovieTheaters, setNonSelectedMovieTheaters] =
+    useState<movieTheaterDTO[]>([]);
+
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    axios.get(`${urlMovies}/postget`)
+        .then((response: AxiosResponse<moviesPostGetDTO>) => {
+            setNonSelectedGenres(response.data.genres);
+            setNonSelectedMovieTheaters(response.data.movieTheaters);
+            setLoading(false);
+        })
+}, [])
+
 
   return (
     <>
       <h3>Create Movie</h3>
-            <MovieForm model={{title: '',inTheaters: false, trailer: '' }}
-                onSubmit={values => console.log(values)}
-                nonSelectedGenres={nonSelectedGenres}
-                selectedGenres={[]}
+            
+            {loading ? <Loading /> :
+                <MovieForm model={{ title: '', inTheaters: false, trailer: '' }}
+                    onSubmit={values => console.log(values)}
+                    nonSelectedGenres={nonSelectedGenres}
+                    selectedGenres={[]}
 
-
-                nonSelectedMovieTheaters={nonSelectedMovieTheaters}
-                selectedMovieTheaters={[]}
-                selectedActors={[]}
-        />
+                    nonSelectedMovieTheaters={nonSelectedMovieTheaters}
+                    selectedMovieTheaters={[]}
+                    selectedActors={[]}
+                />}
     </>
   );
 }

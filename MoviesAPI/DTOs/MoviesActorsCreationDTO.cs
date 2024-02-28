@@ -6,4 +6,4 @@
         public string Character { get; set; }
     }
 }
-}
+

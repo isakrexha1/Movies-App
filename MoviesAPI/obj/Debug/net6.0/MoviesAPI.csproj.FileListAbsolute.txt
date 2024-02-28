@@ -215,3 +215,4 @@ C:\Users\FM COMPUTERS\OneDrive\Desktop\Movies-App\MoviesAPI\bin\Debug\net6.0\Mic
 C:\Users\FM COMPUTERS\OneDrive\Desktop\Movies-App\MoviesAPI\bin\Debug\net6.0\NetTopologySuite.dll
 C:\Users\FM COMPUTERS\OneDrive\Desktop\Movies-App\MoviesAPI\bin\Debug\net6.0\NetTopologySuite.IO.SqlServerBytes.dll
 C:\Users\FM COMPUTERS\OneDrive\Desktop\Movies-App\MoviesAPI\obj\Debug\net6.0\EFCoreSqlServerNetTopologySuite.cs
+C:\Users\FM COMPUTERS\OneDrive\Desktop\Movies-App\MoviesAPI\bin\Debug\net6.0\Newtonsoft.Json.dll

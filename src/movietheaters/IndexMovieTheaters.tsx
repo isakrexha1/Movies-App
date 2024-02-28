@@ -7,7 +7,7 @@ export default function IndexMovieTheaters() {
     <>
       <IndexEntity<movieTheaterDTO>
         url={urlMovieTheaters}
-        createURL="moviethaters/create"
+        createURL="movietheaters/create"
         title="Movie Theaters"
         entityName="Movie Theater"
       >
