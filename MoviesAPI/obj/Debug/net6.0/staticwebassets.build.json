@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "uehjmkGDlsKYssbklM7QpIRXd0bWsuF5Dhubx2DkDMY=",
+  "Hash": "MLpx8nZqM0bSuIv0UjPfxnkrawraosgd3gpaELFvLBA=",
   "Source": "MoviesAPI",
   "BasePath": "_content/MoviesAPI",
   "Mode": "Default",
@@ -66,6 +66,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\actors\\a5885b35-13db-4020-9845-1ea4232e4814.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\Kaltrina\\Documents\\GitHub\\Movies-App\\MoviesAPI\\wwwroot\\movies\\5579386e-1cad-4d18-9462-8738cd0927ef.png",
+      "SourceId": "MoviesAPI",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Kaltrina\\Documents\\GitHub\\Movies-App\\MoviesAPI\\wwwroot\\",
+      "BasePath": "_content/MoviesAPI",
+      "RelativePath": "movies/5579386e-1cad-4d18-9462-8738cd0927ef.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\movies\\5579386e-1cad-4d18-9462-8738cd0927ef.png"
     }
   ]
 }
