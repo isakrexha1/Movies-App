@@ -15,6 +15,7 @@ import { genreDTO } from "../genres/genres.model";
 import { movieTheaterDTO } from "../movietheaters/movieTheater.model";
 import TypeAheadActor from "../forms/TypeAheadActors";
 import { actorMovieDTO } from "../actors/actors.model";
+import MarkdownField from "../forms/MarkdownField";
 
 export default function MovieForm(props: movieFormProps) {
   const [selectedGenres, setSelectedGenres] = useState(
@@ -44,8 +45,8 @@ export default function MovieForm(props: movieFormProps) {
     <Formik
       initialValues={props.model}
       onSubmit={(values, actions) => {
-        values.genresIds = selectedGenres.map(item => item.key);
-        values.movieTheatersIds = selectedMovieTheaters.map(item => item.key);
+        values.genresIds = selectedGenres.map((item) => item.key);
+        values.movieTheatersIds = selectedMovieTheaters.map((item) => item.key);
         values.actors = selectedActors;
         props.onSubmit(values, actions);
       }}
@@ -66,6 +67,8 @@ export default function MovieForm(props: movieFormProps) {
             field="poster"
             imageURL={props.model.posterURL}
           />
+
+          <MarkdownField displayName="Summary" field="summary" />
 
           <MultipleSelector
             displayName="Movie Theaters"
@@ -92,22 +95,28 @@ export default function MovieForm(props: movieFormProps) {
             onAdd={(actors) => {
               setSelectedActors(actors);
             }}
-            onRemove={actor=>{
-              const actors=selectedActors.filter(x=>x!==actor)
-              setSelectedActors(actors)
+            onRemove={(actor) => {
+              const actors = selectedActors.filter((x) => x !== actor);
+              setSelectedActors(actors);
             }}
-            listUI={(actor: actorMovieDTO) =>
-             <>
-            {actor.name}/ <input placeholder="Character"type="text"
-            value={actor.character}
-            onChange={e=>{
-              const index=selectedActors.findIndex(x=>x.id===actor.id)
-              const actors=[...selectedActors]
-              actors[index].character = e.currentTarget.value;
-              setSelectedActors(actors)
-            }}
-            />
-            </>}
+            listUI={(actor: actorMovieDTO) => (
+              <>
+                {actor.name}/{" "}
+                <input
+                  placeholder="Character"
+                  type="text"
+                  value={actor.character}
+                  onChange={(e) => {
+                    const index = selectedActors.findIndex(
+                      (x) => x.id === actor.id
+                    );
+                    const actors = [...selectedActors];
+                    actors[index].character = e.currentTarget.value;
+                    setSelectedActors(actors);
+                  }}
+                />
+              </>
+            )}
           />
 
           <Button disabled={formikProps.isSubmitting} type="submit">

@@ -11,6 +11,7 @@ export interface movieCreationDTO {
   title: string;
   inTheaters: boolean;
   trailer: string;
+  summary?: string;
   releaseData?: Date;
   poster?: File;
   posterURL?: string;
@@ -24,7 +25,7 @@ export interface landingPageDTO {
   upcomingReleases?: movieDTO[];
 }
 
-export interface moviesPostGetDTO{
+export interface moviesPostGetDTO {
   genres: genreDTO[];
-  movieTheaters: movieTheaterDTO[]; 
+  movieTheaters: movieTheaterDTO[];
 }

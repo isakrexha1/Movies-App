@@ -53,7 +53,7 @@ namespace MoviesAPI.Controllers
             AnnotateActorsOrder(movie);
             context.Add(movie);
             await context.SaveChangesAsync();
-            return NoContent();
+            return movie.Id;
         }
 
         private void AnnotateActorsOrder(Movie movie)
