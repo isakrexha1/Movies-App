@@ -31,7 +31,7 @@ export default function EditMovie() {
           title: "Toy Story",
           inTheaters: true,
           trailer: "url",
-          releaseData: new Date("2019-01-01T00:00:00"),
+          releaseDate: new Date("2019-01-01T00:00:00"),
         }}
         onSubmit={(values) => console.log(values)}
         nonSelectedGenres={nonSelectedGenres}

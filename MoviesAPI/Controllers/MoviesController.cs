@@ -50,7 +50,7 @@ namespace MoviesAPI.Controllers
 
 
         [HttpGet("{id:int}")]
-        public async Task<ActionResult<MovieDTO>>Get(int id)
+        public async Task<ActionResult<MovieDTO>> Get(int id)
         {
             var movie = await context.Movies
                 .Include(x => x.MoviesGenres).ThenInclude(x => x.Genre)
@@ -58,7 +58,7 @@ namespace MoviesAPI.Controllers
                 .Include(x => x.MoviesActors).ThenInclude(x => x.Actor)
                 .FirstOrDefaultAsync(x => x.Id == id);
 
-            if(movie == null)
+            if (movie == null)
             {
                 return NotFound();
             }
@@ -100,7 +100,7 @@ namespace MoviesAPI.Controllers
         {
             if (movie.MoviesActors !=null)
             {
-                for(int i=0; i< movie.MoviesActors.Count; i++)
+                for (int i = 0; i< movie.MoviesActors.Count; i++)
                 {
                     movie.MoviesActors[i].Order = i;
                 }
