@@ -9,7 +9,7 @@ export interface movieDTO {
   inTheaters: boolean;
   trailer: string;
   summary?: string;
-  releaseData: Date;
+  releaseDate: Date;
   genres: genreDTO[];
   movieTheaters: movieTheaterDTO[];
   actors: actorMovieDTO[];

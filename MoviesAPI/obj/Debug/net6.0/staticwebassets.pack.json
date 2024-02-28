@@ -1,20 +1,40 @@
 {
   "Files": [
     {
-      "Id": "C:\\Users\\Kaltrina\\Documents\\GitHub\\Movies-App\\MoviesAPI\\wwwroot\\actors\\2e329fc5-1fdb-43bb-8b2d-81b8b39d5d26.png",
+      "Id": "C:\\Users\\FM COMPUTERS\\OneDrive\\Desktop\\Movies-App\\MoviesAPI\\wwwroot\\actors\\2e329fc5-1fdb-43bb-8b2d-81b8b39d5d26.png",
       "PackagePath": "staticwebassets\\actors\\2e329fc5-1fdb-43bb-8b2d-81b8b39d5d26.png"
     },
     {
-      "Id": "C:\\Users\\Kaltrina\\Documents\\GitHub\\Movies-App\\MoviesAPI\\wwwroot\\actors\\3490cd4e-81c0-414f-9d7c-5f244eed0e4b.jpg",
+      "Id": "C:\\Users\\FM COMPUTERS\\OneDrive\\Desktop\\Movies-App\\MoviesAPI\\wwwroot\\actors\\3490cd4e-81c0-414f-9d7c-5f244eed0e4b.jpg",
       "PackagePath": "staticwebassets\\actors\\3490cd4e-81c0-414f-9d7c-5f244eed0e4b.jpg"
     },
     {
-      "Id": "C:\\Users\\Kaltrina\\Documents\\GitHub\\Movies-App\\MoviesAPI\\wwwroot\\actors\\a5885b35-13db-4020-9845-1ea4232e4814.jpg",
+      "Id": "C:\\Users\\FM COMPUTERS\\OneDrive\\Desktop\\Movies-App\\MoviesAPI\\wwwroot\\actors\\a5885b35-13db-4020-9845-1ea4232e4814.jpg",
       "PackagePath": "staticwebassets\\actors\\a5885b35-13db-4020-9845-1ea4232e4814.jpg"
     },
     {
-      "Id": "C:\\Users\\Kaltrina\\Documents\\GitHub\\Movies-App\\MoviesAPI\\wwwroot\\movies\\5579386e-1cad-4d18-9462-8738cd0927ef.png",
+      "Id": "C:\\Users\\FM COMPUTERS\\OneDrive\\Desktop\\Movies-App\\MoviesAPI\\wwwroot\\movies\\12334679-6069-4f0f-baf8-f83a4cefbd45.png",
+      "PackagePath": "staticwebassets\\movies\\12334679-6069-4f0f-baf8-f83a4cefbd45.png"
+    },
+    {
+      "Id": "C:\\Users\\FM COMPUTERS\\OneDrive\\Desktop\\Movies-App\\MoviesAPI\\wwwroot\\movies\\36ac711f-7d15-4ce9-a7bb-5018f49b7936.png",
+      "PackagePath": "staticwebassets\\movies\\36ac711f-7d15-4ce9-a7bb-5018f49b7936.png"
+    },
+    {
+      "Id": "C:\\Users\\FM COMPUTERS\\OneDrive\\Desktop\\Movies-App\\MoviesAPI\\wwwroot\\movies\\5579386e-1cad-4d18-9462-8738cd0927ef.png",
       "PackagePath": "staticwebassets\\movies\\5579386e-1cad-4d18-9462-8738cd0927ef.png"
+    },
+    {
+      "Id": "C:\\Users\\FM COMPUTERS\\OneDrive\\Desktop\\Movies-App\\MoviesAPI\\wwwroot\\movies\\874ae3f4-6bc3-4f16-847e-b4806f309559.jpeg",
+      "PackagePath": "staticwebassets\\movies\\874ae3f4-6bc3-4f16-847e-b4806f309559.jpeg"
+    },
+    {
+      "Id": "C:\\Users\\FM COMPUTERS\\OneDrive\\Desktop\\Movies-App\\MoviesAPI\\wwwroot\\movies\\95dd523d-1939-4dc7-bbbc-c4c120d59fa0.jpeg",
+      "PackagePath": "staticwebassets\\movies\\95dd523d-1939-4dc7-bbbc-c4c120d59fa0.jpeg"
+    },
+    {
+      "Id": "C:\\Users\\FM COMPUTERS\\OneDrive\\Desktop\\Movies-App\\MoviesAPI\\wwwroot\\movies\\aee5286d-e19c-4743-b3c8-050e661d99c9.png",
+      "PackagePath": "staticwebassets\\movies\\aee5286d-e19c-4743-b3c8-050e661d99c9.png"
     },
     {
       "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.MoviesAPI.Microsoft.AspNetCore.StaticWebAssets.props",

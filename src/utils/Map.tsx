@@ -46,6 +46,7 @@ interface mapProps {
 }
 Map.defaultProps = {
   height: "500px",
+  handleMapClick: () => {}
 };
 function MapClick(props: mapClickProps) {
   useMapEvent("click", (eventArgs) => {
