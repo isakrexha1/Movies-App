@@ -76,7 +76,12 @@ namespace MoviesAPI
                 });
 
 
+            services.AddAuthorization(options =>
+            {
+                options.AddPolicy("IsAdmin", policy => policy.RequireClaim("role", "admin"));
+            });
 
+         
 
             services.AddAutoMapper(typeof(Startup));
 
