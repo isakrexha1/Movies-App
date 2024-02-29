@@ -1,6 +1,7 @@
 import CreateActor from "./actors/CreateActor";
 import EditActor from "./actors/EditActor";
 import IndexActors from "./actors/IndexActors";
+import Login from "./auth/Login";
 import Register from "./auth/Register";
 import CreateGenre from "./genres/CreateGenre";
 import EditGenre from "./genres/EditGenre";
@@ -34,6 +35,8 @@ const routes = [
   { path: "/movie/:id(\\d+)", component: MovieDetails },
 
   { path: "/register", component: Register },
+  { path: "/login", component: Login },
+
 
   { path: "/", component: LandingPage, exact: true },
   { path: "*", component: RedirectToLandingPage },
