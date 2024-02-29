@@ -3,18 +3,36 @@ import Menu from "./Menu";
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import routes from "./route-config";
 import configureValidations from './Validations';
+import { useState } from "react";
+import { claim } from "./auth/auth.models";
+import AuthenticationContext from "./auth/AuthenticationContext";
 
 configureValidations();
 
 function App() {
+
+  const [claims, setClaims] = useState<claim[]>([
+    {name: 'email', value: 'isakrexha@gmail.com'}
+  ]);
+
+
+  function isAdmin(){
+    return claims.findIndex(claim => claim.name === 'role' && claim.value === 'admin') > -1;
+  }
+
   return (
     <BrowserRouter>
+
+    <AuthenticationContext.Provider value={{ claims, update: setClaims }}>
+      
       <Menu />
       <div className="container">
         <Switch>
           {routes.map(route => 
             <Route key={route.path} path={route.path} exact={route.exact}>
-              <route.component />
+              {route.isAdmin && !isAdmin() ? <>
+                  You are not allowed to see this page
+                </>:  <route.component />}
             </Route>
           )}
         </Switch>
@@ -26,6 +44,7 @@ function App() {
         </div>
       </footer>
 
+      </AuthenticationContext.Provider>
     </BrowserRouter>
   );
 }

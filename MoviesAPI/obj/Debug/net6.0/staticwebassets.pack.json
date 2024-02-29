@@ -29,8 +29,8 @@
       "PackagePath": "staticwebassets\\movies\\0c73ec42-2dd8-43b9-a8db-1e314a91738b.jpeg"
     },
     {
-      "Id": "C:\\Users\\FM COMPUTERS\\OneDrive\\Desktop\\Movies-App\\MoviesAPI\\wwwroot\\movies\\22241084-8a60-4eb2-bd52-ea1449c7c74a.jpeg",
-      "PackagePath": "staticwebassets\\movies\\22241084-8a60-4eb2-bd52-ea1449c7c74a.jpeg"
+      "Id": "C:\\Users\\FM COMPUTERS\\OneDrive\\Desktop\\Movies-App\\MoviesAPI\\wwwroot\\movies\\188c4dbd-cee8-46f3-9fa2-86067d618566.jpeg",
+      "PackagePath": "staticwebassets\\movies\\188c4dbd-cee8-46f3-9fa2-86067d618566.jpeg"
     },
     {
       "Id": "C:\\Users\\FM COMPUTERS\\OneDrive\\Desktop\\Movies-App\\MoviesAPI\\wwwroot\\movies\\2306e2c4-c4de-4351-89bf-bdeff7c490ce.png",
@@ -53,44 +53,12 @@
       "PackagePath": "staticwebassets\\movies\\5b6a6f47-3480-466a-be8f-ab1484b7bff4.jpg"
     },
     {
-      "Id": "C:\\Users\\FM COMPUTERS\\OneDrive\\Desktop\\Movies-App\\MoviesAPI\\wwwroot\\movies\\699ef596-cf99-42f1-a71a-0bb8f03b9910.jpeg",
-      "PackagePath": "staticwebassets\\movies\\699ef596-cf99-42f1-a71a-0bb8f03b9910.jpeg"
-    },
-    {
       "Id": "C:\\Users\\FM COMPUTERS\\OneDrive\\Desktop\\Movies-App\\MoviesAPI\\wwwroot\\movies\\78d4cddf-afc7-4e11-b0cf-ce8eccbf9eed.jpeg",
       "PackagePath": "staticwebassets\\movies\\78d4cddf-afc7-4e11-b0cf-ce8eccbf9eed.jpeg"
     },
     {
-      "Id": "C:\\Users\\FM COMPUTERS\\OneDrive\\Desktop\\Movies-App\\MoviesAPI\\wwwroot\\movies\\80482ec2-3095-41da-8c02-cd0a31c57160.jpg",
-      "PackagePath": "staticwebassets\\movies\\80482ec2-3095-41da-8c02-cd0a31c57160.jpg"
-    },
-    {
-      "Id": "C:\\Users\\FM COMPUTERS\\OneDrive\\Desktop\\Movies-App\\MoviesAPI\\wwwroot\\movies\\874ae3f4-6bc3-4f16-847e-b4806f309559.jpeg",
-      "PackagePath": "staticwebassets\\movies\\874ae3f4-6bc3-4f16-847e-b4806f309559.jpeg"
-    },
-    {
       "Id": "C:\\Users\\FM COMPUTERS\\OneDrive\\Desktop\\Movies-App\\MoviesAPI\\wwwroot\\movies\\92450876-5bfa-4c4d-b9fe-949a3b900e8d.png",
       "PackagePath": "staticwebassets\\movies\\92450876-5bfa-4c4d-b9fe-949a3b900e8d.png"
-    },
-    {
-      "Id": "C:\\Users\\FM COMPUTERS\\OneDrive\\Desktop\\Movies-App\\MoviesAPI\\wwwroot\\movies\\93cd04ea-257a-4566-9611-d4ec963e67f5.jpeg",
-      "PackagePath": "staticwebassets\\movies\\93cd04ea-257a-4566-9611-d4ec963e67f5.jpeg"
-    },
-    {
-      "Id": "C:\\Users\\FM COMPUTERS\\OneDrive\\Desktop\\Movies-App\\MoviesAPI\\wwwroot\\movies\\b501a654-2f7b-48c4-a96f-5b36fa5c4ae1.jpeg",
-      "PackagePath": "staticwebassets\\movies\\b501a654-2f7b-48c4-a96f-5b36fa5c4ae1.jpeg"
-    },
-    {
-      "Id": "C:\\Users\\FM COMPUTERS\\OneDrive\\Desktop\\Movies-App\\MoviesAPI\\wwwroot\\movies\\c3474ec0-9cfc-4896-9992-9ae41ef4802f.jpeg",
-      "PackagePath": "staticwebassets\\movies\\c3474ec0-9cfc-4896-9992-9ae41ef4802f.jpeg"
-    },
-    {
-      "Id": "C:\\Users\\FM COMPUTERS\\OneDrive\\Desktop\\Movies-App\\MoviesAPI\\wwwroot\\movies\\e66c7d89-55d8-4e5d-9a8a-f228b517bec7.jpeg",
-      "PackagePath": "staticwebassets\\movies\\e66c7d89-55d8-4e5d-9a8a-f228b517bec7.jpeg"
-    },
-    {
-      "Id": "C:\\Users\\FM COMPUTERS\\OneDrive\\Desktop\\Movies-App\\MoviesAPI\\wwwroot\\movies\\ed5ffadc-37ab-4632-8b5e-4fb7e6951dae.jpeg",
-      "PackagePath": "staticwebassets\\movies\\ed5ffadc-37ab-4632-8b5e-4fb7e6951dae.jpeg"
     },
     {
       "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.MoviesAPI.Microsoft.AspNetCore.StaticWebAssets.props",

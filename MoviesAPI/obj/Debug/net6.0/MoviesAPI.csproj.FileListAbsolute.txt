@@ -217,3 +217,8 @@ C:\Users\FM COMPUTERS\OneDrive\Desktop\Movies-App\MoviesAPI\bin\Debug\net6.0\Net
 C:\Users\FM COMPUTERS\OneDrive\Desktop\Movies-App\MoviesAPI\obj\Debug\net6.0\EFCoreSqlServerNetTopologySuite.cs
 C:\Users\FM COMPUTERS\OneDrive\Desktop\Movies-App\MoviesAPI\bin\Debug\net6.0\Newtonsoft.Json.dll
 C:\Users\Kaltrina\Documents\GitHub\Movies-App\MoviesAPI\bin\Debug\net6.0\Newtonsoft.Json.dll
+C:\Users\FM COMPUTERS\OneDrive\Desktop\Movies-App\MoviesAPI\bin\Debug\net6.0\Microsoft.AspNetCore.Cryptography.Internal.dll
+C:\Users\FM COMPUTERS\OneDrive\Desktop\Movies-App\MoviesAPI\bin\Debug\net6.0\Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
+C:\Users\FM COMPUTERS\OneDrive\Desktop\Movies-App\MoviesAPI\bin\Debug\net6.0\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
+C:\Users\FM COMPUTERS\OneDrive\Desktop\Movies-App\MoviesAPI\bin\Debug\net6.0\Microsoft.Extensions.Identity.Core.dll
+C:\Users\FM COMPUTERS\OneDrive\Desktop\Movies-App\MoviesAPI\bin\Debug\net6.0\Microsoft.Extensions.Identity.Stores.dll
